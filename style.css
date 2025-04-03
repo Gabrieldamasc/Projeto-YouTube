@@ -6,6 +6,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Mobile Version */
+
 body{
     background-color: #0C0C0C;
 }
@@ -13,4 +15,20 @@ body{
 button{
     background: none;
     border: none;
+}
+
+.head{
+    display: none;
+}
+
+.video{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#main-video{
+    height: 200px;
+    width: 100%;
+    border-bottom: 2px solid red;
 }
