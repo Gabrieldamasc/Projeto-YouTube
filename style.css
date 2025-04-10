@@ -22,7 +22,13 @@ body {
 }
 
 .menu-hamburger{
+    margin-top: 8px;
     cursor: pointer;
+}
+
+.menu-hamburger img{
+    width: 25px;
+    height: 25px;
 }
 
 .logo img {
@@ -36,8 +42,8 @@ body {
 }
 
 .icone img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .barra-pesquisa{
@@ -76,9 +82,10 @@ body {
     margin-top: 5px;
     width: 30px;
     height: 30px;
-    
+
 }
 .conteudo-principal {
+    margin-left: 50px;
     display: flex;
     padding: 20px;
     gap: 24px;
@@ -102,14 +109,42 @@ body {
 
 .informacoes-video {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 8px;
 }
 
-.visualizacoes {
-    color: #606060;
+#logo-canal{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
 }
+
+#nome-do-canal{
+    cursor: pointer;
+    width: 250px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#inscrever{
+    cursor: pointer;
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.dados-canal p{
+ color: rgba(255, 255, 255, 0.466);
+ font-size: 13px;
+}
+
+
 
 .acoes-video {
     display: flex;
@@ -117,64 +152,79 @@ body {
 }
 
 .botao-acao {
-    background-color: #f1f1f1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363636;
     border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-.botao-acao:hover {
-    background-color: #e1e1e1;
-}
-
-.descricao-canal {
+.like-dislike-button{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 16px;
-    border-top: 1px solid #ddd;
-    padding-top: 16px;
+    background-color: #363636;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
 }
 
-.info-canal {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+#more-horizontal-button{
+    width: 50px;
+    height: 50px;
 }
 
-.icone-canal {
-    font-size: 36px;
+#more-horizontal-button img{
+    width: 28px;
+    height: 28px;
 }
 
-.nome-canal {
-    font-weight: bold;
+#share-button{
+    width: 120px;
 }
 
-.inscritos {
-    color: #606060;
-}
-
-.botao-inscrever {
-    background-color: red;
+#share-button p{
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 12px;
     color: white;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
-.botao-inscrever:hover {
-    background-color: #cc0000;
+#vizu{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    border-right: 1px solid rgba(255, 251, 251, 0.441);
+    padding-right: 10px;
+    color: white;
+}
+
+.botao-acao img{
+    width: 20px;
+    height: 20px;
 }
 
 .descricao-video {
     margin-top: 12px;
-    background-color: #f1f1f1;
+    background-color: #363636;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 10px;
 }
+
+.dados-video{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.descricao-video p{
+    color: white;
+}
+
 
 .videos-sugeridos {
     flex: 1;
@@ -186,21 +236,16 @@ body {
 .video-sugerido {
     display: flex;
     gap: 12px;
-    background-color: #fff;
+    background-color: #0C0C0C;
     padding: 8px;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.video-sugerido:hover {
-    background-color: #f0f0f0;
 }
 
 .miniatura-video {
-    width: 120px;
-    height: 70px;
-    background-color: #ccc;
+    width: 140px;
+    height: 90px;
+    background-color: #dc6b6b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,15 +253,18 @@ body {
     font-size: 24px;
 }
 
-.info-video-sugerido {
-    flex: 1;
+.miniatura-video img{
+    width: 140px;
+    height: 90px;
 }
 
 .titulo-sugerido {
+    color: white;
     font-weight: bold;
 }
 
 .nome-canal, .visualizacoes {
+    font-weight: 500;
     font-size: 13px;
-    color: #606060;
+    color: #a3a3a3;
 }
