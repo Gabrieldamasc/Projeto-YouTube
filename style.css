@@ -22,8 +22,18 @@ body {
 }
 
 .menu-hamburger{
-    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.menu-hamburger:hover{
+    transition: 0.3s;
+    background-color: #343333;
+    border-radius: 50px;
 }
 
 .menu-hamburger img{
@@ -37,8 +47,25 @@ body {
 }
 
 .icones-cabecalho .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     margin-left: 16px;
     cursor: pointer;
+}
+
+.icones-cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones-cabecalho .icone:hover{
+    transition: 0.3s;
+    background-color: #343333;
+    border-radius: 50px;
 }
 
 .icone img{
