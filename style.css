@@ -320,6 +320,10 @@ body {
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+}
+
 .miniatura-video {
     width: 140px;
     height: 90px;
